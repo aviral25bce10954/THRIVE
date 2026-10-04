@@ -10,6 +10,7 @@ import Login from './pages/Login/Login'
 import Signup from './pages/Signup/Signup'
 import Information from './pages/Support/Information'
 import TalkToSomeone from './pages/Support/TalkToSomeone'
+import Profile from './pages/Profile'
 
 function App() {
   return (
@@ -18,14 +19,36 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+
         <Route path="/about" element={<About />} />
+
         <Route path="/resources" element={<Resources />} />
+
         <Route path="/support" element={<Support />} />
+
         <Route path="/login" element={<Login />} />
+
         <Route path="/signup" element={<Signup />} />
-        <Route path="/resources/stress-and-overwhelm" element={<StressAndOverwhelm />}/>
-        <Route path="/support/information" element={<Information />} />
-        <Route path="/support/talk" element={<TalkToSomeone />} />
+
+        <Route
+          path="/resources/stress-and-overwhelm"
+          element={<StressAndOverwhelm />}
+        />
+
+        <Route
+          path="/support/information"
+          element={<Information />}
+        />
+
+        <Route
+          path="/support/talk"
+          element={<TalkToSomeone />}
+        />
+
+        <Route
+          path="/profile"
+          element={<Profile />}
+        />
       </Routes>
     </BrowserRouter>
   )
